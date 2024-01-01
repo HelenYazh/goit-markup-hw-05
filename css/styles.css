@@ -699,20 +699,12 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .form-agreement-checkbox {
+.checkbox:checked + .form-agreement > .form-agreement-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-/* .checkbox:checked + .form-agreement-checkbox > .form-agreement-icon {
-  opacity: 1;
-}
-
-.form-agreement-icon {
-  fill: #f4f4fd;
-  opacity: 0;
-} */
 .form-agreement-link {
   color: #4d5ae5;
   text-decoration-line: underline;
