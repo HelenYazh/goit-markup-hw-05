@@ -489,6 +489,7 @@
               <input
                 class="subscribe-form-input"
                 type="email"
+                name="email"
                 placeholder="E-mail"
               />
             </label>
@@ -504,7 +505,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -517,13 +518,13 @@
 
         <form class="modal-form form">
           <div class="form-wrapper">
-            <label class="form-label" for="user_name"> Name </label>
+            <label class="form-label" for="user-name"> Name </label>
             <div class="form-field">
               <input
                 class="form-input"
                 type="text"
-                id="user_name"
-                name="user_name"
+                id="user-name"
+                name="user-name"
               />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -556,32 +557,35 @@
             </div>
           </div>
 
-          <div class="form-wrapper"
-            ><label for="user_message" class="form-label">Comment</label
+          <div class="form-wrapper comment-wrapper"
+            ><label for="user-comment" class="form-label">Comment</label
             ><textarea
-              class="form-message"
-              name="user_message"
-              id="user_message"
+              class="form-comment"
+              name="user-comment"
+              id="user-comment"
               rows="7"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <label class="form-agreement">
-            <input
-              class="checkbox visually-hidden"
-              type="checkbox"
-              name="user_agreement"
-              value="false"
-            />
-            <span class="form-agreement-checkbox">
-              <svg class="form-agreement-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="form-agreement-link" href="">Privacy Policy</a>
-          </label>
+          <div class="form-wrapper agreement-wrapper">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                name="user-privacy"
+                value="true"
+              />
+              <label class="form-agreement" for="user-privacy">
+              <span class="form-agreement-checkbox">
+                <svg class="form-agreement-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="form-agreement-link" href="">Privacy Policy</a>
+            </label>
+          </div>
 
           <button class="hero-button" type="submit"> Send </button>
         </form>
